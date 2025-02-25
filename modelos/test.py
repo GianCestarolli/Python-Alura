@@ -9,6 +9,7 @@ class Livro:
 
     def __str__(self):
         return f'{self._titulo} | {self._autor} | {self._ano_publicacao} | {self.disponivel}'
+        return f'{self._titulo} | {self._autor} | {self._ano_publicacao} | {self.disponivel}'
 
     def emprestar(self):
         self._disponivel = not self._disponivel
