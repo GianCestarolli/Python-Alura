@@ -1,22 +1,29 @@
-class ContaBancaria:
-    def __init__(self, titular, saldo):
-        self._titular = titular
-        self._saldo = saldo
-        self._ativo = False
+class Livro:
+    def __init__(self, titulo, autor, ano_publicacao):
+        self._titulo = titulo
+        self._autor = autor
+        self._ano_publicacao = ano_publicacao
+        self._disponivel = True
 
     def __str__(self):
-        return f'{self._titular} | {self._saldo} | {self._ativo}'
+        return f'{self._titulo} | {self._autor} | {self._ano_publicacao} | {self.disponivel}'
 
-    def ativar_conta(self):
-        self._ativo = not self._ativo
+    def emprestar(self):
+        self._disponivel = not self._disponivel
 
-carlos = ContaBancaria("Carlos", 2000)
-ana = ContaBancaria("Ana", 5000)
+    @property
+    def disponivel(self):
+        if self._disponivel:
+            return "Disponível"
+        else:
+            return "Não disponível"
 
-carlos.ativar_conta()
-print(carlos)
-print(ana)
+livro_1984 = Livro("1984", "George Orwell", "1949")
+livro_noites_brancas = Livro("Noites Brancas", "Fiodor Dostoievsk", "1848")
+livro_noites_brancas.emprestar()
 
+print(livro_1984)
+print(livro_noites_brancas)
 
 
 
