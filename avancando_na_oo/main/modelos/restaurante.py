@@ -1,4 +1,5 @@
 from modelos.avaliacao import Avaliacao
+from modelos.cardapio.item_cardapio import ItemCardapio
 
 class Restaurante:
     restaurantes = []
@@ -27,11 +28,16 @@ class Restaurante:
     def alternar_estado(self):
         self._ativo = not self._ativo
 
-    def adicionar_bebida_no_cardapio(self, bebida):
-        self._cardapio.append(bebida)
+    # def adicionar_bebida_no_cardapio(self, bebida):
+    #     self._cardapio.append(bebida)
 
-    def adicionar_prato_no_cardapio(self, prato):
-        self._cardapio.append(prato)
+    # def adicionar_prato_no_cardapio(self, prato):
+    #     self._cardapio.append(prato)
+
+    def adicionar_no_cardapio(self, item):
+        if isinstance(item, ItemCardapio):
+            self._cardapio.append(item)
+
 
     def receber_avaliacao(self, cliente, nota):
         if 0 < nota <= 5: 
