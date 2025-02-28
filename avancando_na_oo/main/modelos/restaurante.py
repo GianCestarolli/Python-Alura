@@ -8,6 +8,7 @@ class Restaurante:
         self._categoria = categoria.upper()
         self._ativo = False
         self._avaliacao = []
+        self._cardapio = []
         Restaurante.restaurantes.append(self)
     
     def __str__(self):
@@ -25,6 +26,12 @@ class Restaurante:
     
     def alternar_estado(self):
         self._ativo = not self._ativo
+
+    def adicionar_bebida_no_cardapio(self, bebida):
+        self._cardapio.append(bebida)
+
+    def adicionar_prato_no_cardapio(self, prato):
+        self._cardapio.append(prato)
 
     def receber_avaliacao(self, cliente, nota):
         if 0 < nota <= 5: 
