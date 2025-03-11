@@ -18,3 +18,5 @@
 ### Ativando/desativando o ambiente virtual:
 - "./venv/Scripts/activate"
 -  "deactivate"
+### Criando o "Requirements.txt":
+- "pip freeze > requirements.txt"
