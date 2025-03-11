@@ -11,8 +11,8 @@
 -  Utilizar ambientes virtuais
 <br/>
 ## Principais comandos VENV
-### Criando o ambiente virtual:
+**Criando o ambiente virtual:**
 - python -m venv venv
-### Ativando/desativando o ambiente virtual:
+**Ativando/desativando o ambiente virtual:**
 - ./venv/Scripts/activate
 -  deactivate
