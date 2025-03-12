@@ -6,10 +6,11 @@
 -  Criação e uso de classes.
 -  Manipulação de objetos.
 -  Utilização de métodos.
+-  Abstração.
 -  Herança.
 -  Encapsulamento.
 -  Polimorfismo.
--  Utilizar ambientes virtuais
+-  Utilização ambientes virtuais.
 <br/>
 
 ## Principais comandos VENV
