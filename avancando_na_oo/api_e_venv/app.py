@@ -17,7 +17,7 @@ if response.status_code == 200:
             "item": item["Item"],
             "price": item["price"],
             "description": item["description"]
-            })
+        })
 
 else:
     print(f'O erro foi: {status_code}')
@@ -26,3 +26,4 @@ for nome_do_restaurante, dados in dados_restaurante.items():
     nome_do_arquivo = f'{nome_do_restaurante}.json'
     with open(nome_do_arquivo,'w') as arquivo_restaurante:
         json.dump(dados,arquivo_restaurante,indent=4)
+
