@@ -21,3 +21,11 @@
 -  "deactivate"
 #### Criando o "Requirements.txt":
 - "pip freeze > requirements.txt"
+<br/>
+
+### APIs
+- Entendimento do funcionamento de uma API.
+- Utilização do módulo "requests" para realizar requisições.
+- Salvar os dados recebidos em arquivos JSON.
+- Criação de APIs utilizando FastAPI.
+- Documentação interativa.
