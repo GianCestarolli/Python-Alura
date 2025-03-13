@@ -3,6 +3,7 @@
 <br/>
 
 ## O que aprendi durante este curso?
+### POO
 -  Criação e uso de classes.
 -  Manipulação de objetos.
 -  Utilização de métodos.
@@ -10,14 +11,13 @@
 -  Herança.
 -  Encapsulamento.
 -  Polimorfismo.
--  Utilização ambientes virtuais.
 <br/>
 
-## Principais comandos VENV
-### Criando o ambiente virtual:
+### Principais comandos VENV
+#### Criando o ambiente virtual:
 - "python -m venv venv"
-### Ativando/desativando o ambiente virtual:
+#### Ativando/desativando o ambiente virtual:
 - "./venv/Scripts/activate"
 -  "deactivate"
-### Criando o "Requirements.txt":
+#### Criando o "Requirements.txt":
 - "pip freeze > requirements.txt"
